@@ -34,24 +34,25 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
-    transform: rotate(-90deg);
+    transform: rotate(-91deg);
     overflow: visible;
     svg {
         position: absolute;
         top: 0;
         left: -.5px;
         fill: none;
+        overflow: visible;
     }
     circle {
         stroke-dasharray: 360;
-        stroke-dashoffset: 355;
+        stroke-dashoffset: 356;
         stroke-width: 2px;
         stroke-linecap: round;
     }
 }
 
 .indicatorValue {
-    transform: rotate(90deg);
+    transform: rotate(91deg);
 }
 
 .info {

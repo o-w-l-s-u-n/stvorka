@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+}
+
+.frameCont {
+    display: flex;
+    align-items: center;
+    padding: 12px 22px;
+    background-color: #3579F5;
+    width: 743px;
+    border-radius: 10px;
+    gap: 16px;
+;
+}
+
+.roundIndicationCont {
+    border-radius: 50%;
+    box-sizing: border-box;
+    width: 60px;
+    height: 60px;
+    margin: 4px 0;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transform: rotate(-90deg);
+    overflow: visible;
+    svg {
+        position: absolute;
+        top: 0;
+        left: -.5px;
+        fill: none;
+    }
+    circle {
+        stroke-dasharray: 360;
+        stroke-dashoffset: 355;
+        stroke-width: 2px;
+        stroke-linecap: round;
+    }
+}
+
+.indicatorValue {
+    transform: rotate(90deg);
+}
+
+.info {
+    font-size: 12px;
+    line-height: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.checklist {
+    border-radius: 40px;
+    width: 76px;
+    background-color: #2364DB;
+    text-align: center;
+}
+
+.completionStat {
+    font-weight: 600;
+    font-size: 15px;
+
+}
+
+.openButton {
+    border: none;
+    background-color: #ffffff;
+    border-radius: 6px;
+    color: #4777ED;
+    font-size: 14px;
+    padding: 10px 32px 10px 32px;
+    width: 170px;
+    white-space: nowrap;
+    margin-left: auto;
+}
+

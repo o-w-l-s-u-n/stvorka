@@ -18,6 +18,8 @@ body {
     padding: 12px 22px;
     background-color: #3579F5;
     width: 743px;
+    height: 91px;
+    box-sizing: border-box;
     border-radius: 10px;
     gap: 16px;
 ;
@@ -25,10 +27,9 @@ body {
 
 .roundIndicationCont {
     border-radius: 50%;
-    box-sizing: border-box;
     width: 60px;
     height: 60px;
-    margin: 4px 0;
+    box-sizing: content-box;
     border: 1px solid rgba(255, 255, 255, 0.5);
     display: flex;
     align-items: center;
@@ -39,14 +40,15 @@ body {
 
     svg {
         position: absolute;
+        /*top: -.5px;*/
         top: 0;
-        left: -.5px;
+        left: 0;
         fill: none;
         overflow: visible;
     }
     circle {
         --offsetVar: 2;
-        --dashArrayVar: 185;
+        --dashArrayVar: 191.6;
         stroke-dasharray: var(--dashArrayVar);
         stroke-dashoffset: calc((100 - var(--offsetVar)) * var(--dashArrayVar) / 100);
         stroke-width: 2px;
@@ -64,6 +66,9 @@ body {
     display: flex;
     flex-direction: column;
     gap: 6px;
+    p {
+        margin: 0;
+    }
 }
 
 .checklist {
@@ -71,6 +76,9 @@ body {
     width: 76px;
     background-color: #2364DB;
     text-align: center;
+    margin: 0;
+    font-size: inherit;
+    font-weight: inherit;
 }
 
 .completionStat {
